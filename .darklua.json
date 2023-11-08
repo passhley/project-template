@@ -14,8 +14,7 @@
             },
             "target": {
                 "name": "roblox",
-                "rojo_sourcemap": "./sourcemap.json",
-                "indexing_style": "property"
+                "rojo_sourcemap": "./sourcemap.json"
             }
         }
     ]
