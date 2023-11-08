@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "install packages",
+            "type": "shell",
+            "command": "wally install"
+        },
+        {
+            "label": "sourcemap",
+            "type": "shell",
+            "command": "rojo sourcemap -o sourcemap.json bundle.project.json"
+        },
+        {
+            "label": "package types",
+            "type": "shell",
+            "command": "wally-package-types -s sourcemap.json Packages/"
+        },
+        {
+            "dependsOn": ["install packages", "sourcemap", "package types"],
+            "dependsOrder": "sequence",
+            "group": { "kind": "build", "isDefault": true },
+            "label": "install",
+            "problemMatcher": [],
+            "type": "shell"
+        },
+        {
+            "command": "darklua process --watch src/ out/",
+            "label": "darklua watch",
+            "type": "shell",
+        },
+        {
+            "command": "rojo sourcemap -o sourcemap.json bundle.project.json",
+            "label": "sourcemap watch",
+            "type": "shell",
+        },
+        {
+            "dependsOn": ["sourcemap watch", "darklua watch"],
+            "dependsOrder": "sequence",
+            "group": { "kind": "build", "isDefault": true },
+            "label": "build (watch)",
+            "problemMatcher": [],
+            "type": "shell"
+        },
+    ]
+}

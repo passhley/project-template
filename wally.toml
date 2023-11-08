@@ -1,0 +1,15 @@
+[package]
+name = "passhley/your-project-name"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[place]
+shared-packages = "game.ReplicatedStorage.packages"
+
+[dependencies]
+t = "osyrisrblx/t@3.0.0"
+
+[server-dependencies]
+DataStoreServiceMock = "nezuo/data-store-service-mock@0.3.5"
+Lapis = "nezuo/lapis@0.2.6"

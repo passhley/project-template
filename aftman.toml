@@ -1,0 +1,8 @@
+[tools]
+darklua = "seaofvoices/darklua@0.11.3"
+luau-lsp = "johnnymorganz/luau-lsp@1.24.1"
+rojo = "rojo-rbx/rojo@7.4.0-rc2"
+selene = "kampfkarren/selene@0.25.0"
+stylua = "johnnymorganz/stylua@0.18.2"
+wally = "upliftgames/wally@0.3.2"
+wally-package-types = "johnnymorganz/wally-package-types@1.2.1"

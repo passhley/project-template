@@ -1,0 +1,23 @@
+{
+  "emitLegacyScripts": false,
+  "name": "your-project-name",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": { 
+      "$className": "ReplicatedStorage",
+      "client": { "$path": "src/client" },
+      "packages": { "$path": "Packages" },
+      "remotes": { "$path": "src/remotes" },
+      "shared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "server": { "$path": "src/server" }
+    },
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "packages": { "$path": "ServerPackages" }
+    }
+  }
+}
+

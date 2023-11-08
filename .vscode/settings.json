@@ -1,0 +1,12 @@
+{
+    "luau-lsp.completion.imports.requireStyle": "alwaysRelative",
+    "luau-lsp.require.directoryAliases": {
+        "@client": "./src/client",
+        "@packages": "./Packages",
+        "@server": "./src/server",
+        "@shared": "./src/shared",
+        "@server-packages": "./ServerPackages"
+    },
+    "luau-lsp.sourcemap.autogenerate": true,
+    "luau-lsp.sourcemap.rojoProjectFile": "bundle.project.json"
+}
