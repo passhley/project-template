@@ -1,5 +1,5 @@
 local function makeHello(from: string): string
-	return `<{from}> Hello, world!`
+	return string.format("<%s> Hello, world!", from)
 end
 
 return makeHello

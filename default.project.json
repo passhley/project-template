@@ -7,7 +7,6 @@
       "$className": "ReplicatedStorage",
       "client": { "$path": "out/client" },
       "packages": { "$path": "Packages" },
-      "remotes": { "$path": "src/remotes" },
       "shared": { "$path": "out/shared" }
     },
     "ServerScriptService": {
