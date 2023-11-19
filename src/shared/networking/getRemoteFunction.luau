@@ -10,6 +10,7 @@ local function getEvents(): Folder
 	if events == nil then
 		if isServer then
 			events = Instance.new("Folder")
+			assert(events, "")
 			events.Name = "events"
 			events.Parent = ReplicatedStorage
 		else
@@ -17,7 +18,7 @@ local function getEvents(): Folder
 		end
 	end
 
-	return events
+	return events :: Folder
 end
 
 local function getRemoteFunction(id: string): RemoteFunction
