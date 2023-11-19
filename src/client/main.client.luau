@@ -1,5 +1,5 @@
-local getRemoteEvent = require("@shared/networking/getRemoteEvent")
-local getRemoteFunction = require("@shared/networking/getRemoteFunction")
+local getRemoteEvent = require("@shared/remotes/getRemoteEvent")
+local getRemoteFunction = require("@shared/remotes/getRemoteFunction")
 local makeHello = require("@shared/makeHello")
 
 local testEvent = getRemoteEvent("TestEvent")
