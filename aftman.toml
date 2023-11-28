@@ -1,6 +1,6 @@
 [tools]
-darklua = "seaofvoices/darklua@0.11.3"
-luau-lsp = "johnnymorganz/luau-lsp@1.25.0"
+darklua = "seaofvoices/darklua@0.12.0"
+luau-lsp = "johnnymorganz/luau-lsp@1.26.0"
 rojo = "rojo-rbx/rojo@7.4.0-rc3"
 selene = "kampfkarren/selene@0.26.1"
 stylua = "johnnymorganz/stylua@0.19.1"
